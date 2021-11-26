@@ -1,0 +1,165 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html{
+    font-size: 15px;
+    margin:0;
+}
+
+body{
+    background-color:hsl(0, 0%, 95%);
+}
+
+.panel{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 80vw;
+    margin:auto;
+
+}
+
+h1{
+    font-family: 'Big Shoulders Display';
+    color: hsl(0, 0%, 95%);
+    font-size: 3rem;
+    padding: 4vh 0 2vh 0 ;
+    text-transform: uppercase;
+}
+
+p{
+    font-family: 'Lexend Deca';
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.4em;
+    letter-spacing: 0.1rem;
+}
+
+.box{
+    background-color: hsl(184, 100%, 22%);
+    padding: 5vh 5vh;
+    min-height:30vh;
+}
+
+.box:first-child{
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 5px 5px 0 0;
+}
+
+
+
+.box:last-child{
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 0 5px 5px;
+}
+
+
+.text{
+    min-height:30vh;
+
+}
+
+.buttons{
+    font-family: 'Lexend Deca';
+    font-size: 1rem;
+    border-radius: 30px;
+    border: 3px solid hsl(0, 0%, 95%);
+    padding: 15px 30px;
+    text-decoration: none;
+    color:hsl(31, 77%, 52%);
+    font-weight: 700;
+}
+
+.buttons:hover,.buttons:focus {
+    background-color:transparent;
+    color:hsl(0, 0%, 95%);
+    border: 3px solid hsl(0, 0%, 95%);
+
+}
+
+.middle-btn{
+    color:hsl(184, 100%, 22%);
+}
+
+.last-btn{
+    color:hsl(179, 100%, 13%);
+}
+
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+@media (min-width:700px){
+    .panel{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        max-width: 80vw;
+        margin: 15vh;
+    }
+    .box{
+        min-height:60vh;
+    }
+    .box:first-child{
+        background-color: hsl(31, 77%, 52%);
+        border-radius: 5px 0 0 5px;
+    }
+    
+    
+    
+    .box:last-child{
+        background-color: hsl(179, 100%, 13%);
+        border-radius: 0 5px 5px 0;
+    }
+  }
